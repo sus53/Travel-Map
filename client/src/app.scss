@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.app {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    z-index: 0;
+
+
+    .card {
+        width: 250px;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        label {
+            width: max-content;
+            color: tomato;
+            font-size: 13px;
+            border-bottom: 0.5px solid tomato;
+            margin: 3px 0;
+        }
+
+        .place {
+            font-size: 14px;
+        }
+
+        .review {
+            font-size: 14px;
+        }
+
+        .rating {
+            >* {
+                color: gold;
+            }
+        }
+
+        .username {
+            font-size: 14px;
+        }
+
+        .date {
+            font-size: 12px;
+        }
+    }
+
+    .d-none {
+        display: none;
+    }
+
+    .create-card {
+        width: 250px;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        position: relative;
+
+
+        label {
+            width: max-content;
+            color: tomato;
+            font-size: 13px;
+            border-bottom: 0.5px solid tomato;
+            margin: 3px 0;
+        }
+
+        input,
+        select {
+            outline: none;
+            border: none;
+            font-size: 14px;
+            border-bottom: 0.5px solid lightgray;
+        }
+
+        textarea {
+            resize: none;
+            outline: none;
+            border: none;
+            font-size: 14px;
+            border-bottom: 0.5px solid lightgray;
+            height: 60px;
+        }
+
+        textarea::-webkit-scrollbar {
+            display: none;
+        }
+
+
+        button {
+            width: 100%;
+            color: white;
+            background-color: tomato;
+            border-radius: 5px;
+            border: 0.5px solid lightgray;
+        }
+
+        button:active {
+            background-color: rgb(180, 180, 180);
+        }
+
+    }
+
+    .user {
+        position: fixed;
+        top: 1rem;
+        right: 2rem;
+
+        >button {
+            width: 70px;
+            margin-left: 0.7rem;
+            height: 30px;
+            border-radius: 5px;
+            background-color: lightcyan;
+            border: 1px solid lightblue;
+            cursor: pointer;
+        }
+
+        >button:active {
+            background-color: rgb(203, 255, 255);
+            border: 1px solid rgb(154, 207, 224);
+        }
+    }
+
+    .user-div {
+        top: 0%;
+        height: 100vh;
+        width: 100vw;
+        position: fixed;
+        z-index: 100;
+        backdrop-filter: blur(5px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+
+        .user-form {
+            width: 300px;
+            height: 350px;
+            padding: 30px 20px;
+            background-color: aliceblue;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            border-radius: 10px;
+            color: tomato;
+            border: 1px solid lightgray;
+            position: relative;
+
+
+            >div>div>button {
+                position: absolute;
+                width: 40px;
+                font-size: larger;
+                color: black;
+                right: 0;
+                top: 0;
+                background-color: inherit;
+            }
+
+
+            h3 {
+                text-align: center;
+                font-size: 30px;
+            }
+
+            input {
+                width: 100%;
+                outline: none;
+                border: none;
+                background-color: inherit;
+                border-bottom: 1px solid lightgray;
+            }
+
+            label {
+                width: max-content;
+                border-bottom: 1px solid tomato;
+                display: block;
+                font-size: medium;
+                margin-bottom: 1rem;
+            }
+
+            button {
+                width: 100%;
+                height: 40px;
+                background-color: tomato;
+                color: white;
+                outline: none;
+                border: none;
+                border-radius: 5px;
+            }
+
+            button:active {
+                background-color: rgb(252, 66, 33);
+            }
+        }
+    }
+
+
+
+}
