@@ -29,12 +29,10 @@ function App() {
   })
 
   const getPins = async () => {
-    try
-    {
+    try {
       setPins(await GetPin());
       setNewPin(null);
-    } catch (error)
-    {
+    } catch (error) {
       console.log(error)
     }
   }
@@ -98,7 +96,7 @@ function App() {
                 <label>Rating</label>
                 <div className='rating'>
                   {Array(pin.rating).fill(<Star key={pin._id} />)}
-                </div>
+                </div> 
                 <label>Information</label>
                 <span className='username'>
                   Created by <b>{pin.username}</b>
