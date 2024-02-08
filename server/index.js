@@ -9,9 +9,9 @@ dotenv.config()
 
 const app = express();
 
-mongoose.connect(process.env.mongodb).then(() => {
-    app.listen(4000);
-    console.log("appp is listening in port 4000");
+mongoose.connect("mongodb+srv://Shreejan53:Splatqueen53@database.qsldw.mongodb.net/TravelMap?retryWrites=true&w=majority").then(() => {
+    app.listen("https://travel-map-pink.vercel.app");
+    console.log("appp is listening in https://travel-map-pink.vercel.app/");
 }).catch(err => console.log(err));
 
 app.use(cors());
